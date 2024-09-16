@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <p>Student information</p>
+        <table border="black">
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </table>
+
+<form action="/submit">
+    <div>
+<label for="Na">Name</label>
+<input type="text" id="Na" name="name">
+</div>
+<div>
+<span>Sex:</span>
+<input type="radio" id="ma" name="sex" value="Male">
+<label for="ma">Male</label>
+<input type="radio" id="fe" name="sex" value="Female">
+<label for="fe">Female</label>
+</div>
+<div>
+    <label for="con">Country</label>
+    <select name="Country" id="con">
+        <option value="">Select an option</option>
+        <option value="india">india</option>
+        <option value="nepal">Nepal</option>
+        <option value="usa">USA</option>
+        <option value="Canada">Canada</option>
+    </select>
+</div>
+<div>
+    <label for="mes">Message</label>
+    <textarea name="Message" id="mes" cols="30" rows="10"></textarea>
+</div>
+<div>
+    <input type="checkbox" id="sub" name="sub">
+    <label for="sub">Subscribe?</label>
+</div>
+<button type="submit">Submit</button>
+</form>
+
+<form action="/feeback">
+    <div>
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="n">
+</div>
+<div>
+    <label for="femail">Email</label>
+    <input type="email" id="femail" name="mail">
+</div>
+<div>
+    <label for="fmes">Message:</label>
+    <textarea name="Message" id="fmes" cols="30" rows="10"></textarea>
+</div>
+<div>
+    <p>Rate us our of 5:</p>
+    <input type="radio" name="rate" id="one" value="1">
+    <label for="one">1</label>
+    <input type="radio" name="rate" id="two" value="2">
+    <label for="two">2</label>
+    <input type="radio" name="rate" id="three" value="3">
+    <label for="three">3</label>
+    <input type="radio" name="rate" id="Four" value="4">
+    <label for="four">4</label>
+    <input type="radio" name="rate" id="Five" value="5">
+    <label for="five">5</label>
+</div>
+<button type="submit">Send your message!</button>
+</form>
+</body>
+</html>
